@@ -1,0 +1,5 @@
+node_modules
+tracker_server.js
+.env
+pm2*
+package-lock.json
