@@ -3,8 +3,9 @@ import { butterfliesBackground } from "https://unpkg.com/threejs-toys@0.0.7/buil
 const app = document.getElementById("app");
 
 /** ====== CONFIG (same as landing) ====== */
-const TRACK_URL = "http://YOUR_SERVER_IP:5055/track";
-const TRACK_KEY = "PUT_THE_SAME_SECRET_AS_TRACKER_API_KEY";
+const TRACK_URL =
+  "https://will-you-be-my-valentine-gray-three.vercel.app/track";
+const TRACK_KEY = "myNewLongKey@123456 ";
 /** ====================================== */
 
 function getName() {

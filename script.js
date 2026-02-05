@@ -30,10 +30,9 @@ const messages = [
 ];
 
 let messageIndex = 0;
-
-/** ====== CONFIG: change these two ====== */
-const TRACK_URL = "http://YOUR_SERVER_IP:5055/track"; // example: http://192.168.100.4:5055/track
-const TRACK_KEY = "PUT_THE_SAME_SECRET_AS_TRACKER_API_KEY";
+const TRACK_URL =
+  "https://will-you-be-my-valentine-gray-three.vercel.app/track";
+const TRACK_KEY = "myNewLongKey@123456 ";
 /** ====================================== */
 function formatName(name) {
   if (!name) return "";
