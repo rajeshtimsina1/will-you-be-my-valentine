@@ -1,0 +1,24 @@
+{
+  "name": "will-you-be-my-valentine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajeshtimsina1/will-you-love-sure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rajeshtimsina1/will-you-love-sure/issues"
+  },
+  "homepage": "https://github.com/rajeshtimsina1/will-you-love-sure#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

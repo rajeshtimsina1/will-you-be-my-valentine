@@ -3,13 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0;url=landing.html" />
-    <title>Open The Page</title>
+    <title>Just one thing… 💙</title>
+
     <style>
       body {
-        background-color: black;
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        font-family: Arial, sans-serif;
+        background: radial-gradient(
+          circle at 50% 15%,
+          #dff6ff 0%,
+          #bfe9ff 40%,
+          #ffffff 100%
+        );
+      }
+
+      .card {
+        width: min(520px, 92vw);
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 18px;
+        padding: 18px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 18px 55px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.7rem;
+        color: #0f2b46;
+      }
+
+      p {
+        margin: 0 0 14px;
+        color: rgba(15, 43, 70, 0.75);
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 1.05rem;
+        border-radius: 14px;
+        border: 1px solid rgba(0, 0, 0, 0.14);
+        outline: none;
+        background: rgba(255, 255, 255, 0.75);
+      }
+
+      input:focus {
+        border-color: rgba(46, 125, 255, 0.6);
+        box-shadow: 0 0 0 4px rgba(46, 125, 255, 0.18);
+      }
+
+      .btn {
+        margin-top: 12px;
+        border: none;
+        border-radius: 14px;
+        padding: 12px 18px;
+        min-width: 160px;
+        font-weight: 800;
+        cursor: pointer;
+        color: white;
+        background: linear-gradient(
+          135deg,
+          #2e7dff 0%,
+          #56b1ff 55%,
+          #8fe2ff 100%
+        );
+        box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+        transition: transform 0.12s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .tiny {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: rgba(15, 43, 70, 0.65);
       }
     </style>
   </head>
-  <body></body>
+
+  <body>
+    <div class="card">
+      <h1>Before we begin… 💙</h1>
+      <input
+        id="nameInput"
+        type="text"
+        placeholder="Type your name..."
+        autocomplete="name"
+      />
+
+      <button class="btn" id="continueBtn">Continue ✨</button>
+
+      <div class="tiny">Only one person will ever see this.</div>
+    </div>
+
+    <script>
+      const input = document.getElementById("nameInput");
+      const btn = document.getElementById("continueBtn");
+
+      function go() {
+        const name = (input.value || "").trim();
+        if (!name) {
+          alert("Please type your name 💙");
+          input.focus();
+          return;
+        }
+        localStorage.setItem("valentine_name", name);
+        window.location.href = `landing.html?name=${encodeURIComponent(name)}`;
+      }
+
+      btn.addEventListener("click", go);
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") go();
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,43 @@
+# =========================
+# Node / npm
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Build / temp (future safe)
+# =========================
+dist/
+build/
+.cache/
+
+# =========================
+# Certificates (if any)
+# =========================
+*.pem
+*.key

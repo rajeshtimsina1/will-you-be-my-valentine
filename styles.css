@@ -5,21 +5,23 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #f9e3e3;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   flex-direction: column;
 }
 
 .container {
   text-align: center;
+  padding: 18px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.4em;
   color: #d32f2f;
+  margin-top: 14px;
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .yes-button {
@@ -30,7 +32,7 @@ h1 {
   background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
@@ -40,13 +42,52 @@ h1 {
   background-color: #f44336;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .gif_container img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 20px;
+}
+
+/* NEW: name box */
+.nameBox {
+  width: min(420px, 92vw);
+  margin: 14px auto 0;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.nameBox label {
+  display: block;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.nameBox input {
+  width: 100%;
+  font-size: 1.05rem;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.nameBox input:focus {
+  border-color: rgba(76, 175, 80, 0.6);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+.tiny {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.55);
 }

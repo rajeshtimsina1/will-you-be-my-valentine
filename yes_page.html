@@ -1,17 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knew you would say yes!💞💕</title>
-    <link rel="stylesheet" href="./yes_style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="header_text">I Knew you would say yes💞💕</h1>
-        <div class="gif_container">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmo3c3l5ODh3ZGN6NHhhaDE2Mjg1ZjkwOXczdDFxbWM3dTBtaW9zaiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9XY4f3FgFTT4QlaYqa/giphy.gif">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>She said YES 💙</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="yes_page.css" />
+  </head>
+
+  <body>
+    <div id="app" class="scene">
+      <main class="layout">
+        <header class="hero">
+          <h1>She said <span class="yes">YES</span> 💙</h1>
+          <p>
+            If you’re the ocean…<br />
+            I’ll be the sky that never stops loving you💝💖
+          </p>
+        </header>
+
+        <!-- NO dark box, just the envelope -->
+        <section class="center">
+          <div class="envelope-wrap">
+            <div
+              id="envelope"
+              class="close"
+              tabindex="0"
+              aria-label="Love letter envelope"
+            >
+              <div class="front flap"></div>
+              <div class="front pocket"></div>
+
+              <div class="letter" aria-hidden="true">
+                <div class="letter-inner">
+                  <div class="to">To: <span>My Love</span></div>
+
+                  <div class="body">
+                    <p class="line">The love of my life,</p>
+                    <p class="line">you feel like home in every storm.</p>
+                    <p class="line">If the world gets loud,</p>
+                    <p class="line">I’ll still choose you — every time.</p>
+                    <p class="line">
+                      Forever is my favorite place with you♾️— Your Sky 💙
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- floating hearts -->
+              <div class="hearts" aria-hidden="true">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hint">Open the letter using the button ✨</div>
+
+          <div class="controls">
+            <button id="open" class="btn btn-primary" type="button">
+              <span class="btn-glow"></span>
+              Open
+            </button>
+
+            <button id="reset" class="btn btn-ghost" type="button">
+              <span class="btn-glow"></span>
+              Close
+            </button>
+          </div>
+        </section>
+
+        <footer class="footer">14–16 Feb • our little universe 🌙</footer>
+      </main>
     </div>
-</body>
+
+    <script type="module" src="yes_page.js"></script>
+  </body>
 </html>
